@@ -2,23 +2,31 @@
   <div id="app">
     <life-cycle-example></life-cycle-example>
     <script-example></script-example>
+    <template-fun></template-fun>
   </div>
 </template>
 
 <script>
 import LifeCycleExample from '@/components/LifeCycleExample.vue'
 import ScriptExample from '@/components/ScriptExample.vue';
+import TemplateFun from '@/components/TemplateFun.vue'
 
 export default {
   name: 'App',
   components: {
     LifeCycleExample,
-    ScriptExample
+    ScriptExample,
+    TemplateFun
   }
 }
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
